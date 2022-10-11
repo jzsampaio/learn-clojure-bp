@@ -1,1 +1,29 @@
 #+TITLE: Learning BP's Clojure Stack
+
+This repository contains my experiments while learning BP's clojure
+stack.
+
+Tools and libraries to experiment with:
+
+- Backend
+    * pedestal :: high level robust http framework
+    * [[https://github.com/ring-clojure/ring][ring]] :: low level http framework
+    * [[https://github.com/stuartsierra/component][component]] lib para injeção de dependência
+    * [[https://github.com/walmartlabs/lacinia][lacinia]] :: graphql provider
+    * jetty :: yet another http server
+- Frontend
+    * shadow.cljs :: Similar to webpack
+    * reagent :: react for clojure script
+        + hiccup (emmet)
+        + state management: reframe (~ redux)
+    * karma :: test runner for js
+    * css: tailwind, flowbite, post css
+- Clojure
+    * malli :: type annotation, validation, and generation for clojure
+- Other
+    * jabba :: version manager for java
+    * z :: easy directory navigation for your terminal
+    * helsman :: related to deployment??
+    * Midje :: test framework
+    * [[https://github.com/dakrone/cheshire][cheshire]] :: for json serialization
+    * [[https://github.com/dakrone/clj-http][clj-http]] :: http client
