@@ -1,0 +1,2 @@
+{:deps
+ {time-lib/asdf12 {:local/root "../time-lib"}}}

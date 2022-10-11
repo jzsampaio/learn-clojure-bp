@@ -1,0 +1,13 @@
+* Tooling
+** Run function from the command line
+
+
+- Consider that your code in inside a file that can be located given
+  the configuration of "deps.end"
+- Consider that the code defines the namespace "hello"
+
+You can run your code from the command line:
+
+#+begin_src sh
+clj -X hello/run
+#+end_src
