@@ -1,0 +1,15 @@
+{:deps {libs/aero {:deps/manifest :deps, :local/root "../../libs/aero"}
+
+        ;; why we need this?
+        org.clojure/clojure {:mvn/version "1.11.1"}
+        
+        io.pedestal/pedestal.service {:mvn/version "0.5.10"}
+        io.pedestal/pedestal.route   {:mvn/version "0.5.10"}
+        io.pedestal/pedestal.jetty   {:mvn/version "0.5.10"}
+
+        com.stuartsierra/component {:mvn/version "1.1.0"}}
+ :paths ["src" "resources"]
+ :test  {:extra-paths ["test"]
+         :extra-deps  {lambdaisland/kaocha                     {:mvn/version "0.0-529"}
+                       clj-test-containers/clj-test-containers {:mvn/version "0.7.3"}}
+         :main-opts   ["-m" "kaocha.runner"]}}
